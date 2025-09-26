@@ -26,7 +26,7 @@ window.onload = function() {
                     <h2>Detalhes da Ilustração</h2>
                     <p>${livro.ilustracao}</p>
 
-                    <a href="index.html#obras" class="back-link">&larr; Voltar para a galeria de obras</a>
+                    <a href="obra.html" class="back-link">&larr; Voltar para a galeria de obras</a>
                 </div>
             </div>
         `;

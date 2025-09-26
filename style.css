@@ -26,7 +26,7 @@ h1, h2, h3 {
     background-image: url('https://www.transparenttextures.com/patterns/handmade-paper.png');
     color: white;
     text-align: center;
-    padding: 60px 20px;
+    padding: 20px 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
@@ -169,3 +169,118 @@ h1, h2, h3 {
 /* ---- RODAPÉ (FOOTER) ---- */
 .main-footer { background-color: #5d4037; color: #fdfaf5; text-align: center; padding: 30px 20px; margin-top: 60px; font-size: 0.9rem; }
 .main-footer p { margin: 5px 0; }
+
+
+/* ---- BARRA DE NAVEGAÇÃO ---- */
+.main-nav {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e7e7e7;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.main-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Garante quebra de linha em telas pequenas */
+}
+
+.main-nav a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #555;
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #e57373;
+}
+
+.main-nav a.active {
+    color: #e57373;
+    font-weight: bold;
+}
+
+.main-nav a.active::after {
+    content: '';
+    display: block;
+    width: 80%;
+    height: 2px;
+    background-color: #e57373;
+    position: absolute;
+    bottom: 10px;
+    left: 10%;
+}
+
+/* ---- PÁGINA MURAL DE MENSAGENS ---- */
+.mural-container { text-align: center; }
+.mural-intro { max-width: 700px; margin: 0 auto 40px; }
+.mural-intro p { font-size: 1.1rem; }
+.mural-intro b { color: #d32f2f; }
+.mural-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+.mural-post-it {
+    background-color: #fffbe9;
+    padding: 25px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.1);
+    transform: rotate(-2deg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+.mural-post-it:nth-child(2n) { transform: rotate(2deg); }
+.mural-post-it:nth-child(3n) { transform: rotate(-1deg); }
+.mural-post-it:hover {
+    transform: rotate(0) scale(1.05);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.15);
+    z-index: 10;
+}
+.mural-post-it p {
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0 0 15px;
+}
+.mural-post-it h4 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.8rem;
+    margin: 0;
+    text-align: right;
+    color: #5d4037;
+}
+
+/* ---- ÍCONES DE MÍDIA SOCIAL (FOOTER) ---- */
+.social-media {
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #7a5f54; /* Linha sutil de separação */
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-media a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background-color: #8d8d8d; /* Cor cinza dos ícones da imagem */
+    color: #ffffff;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-media a:hover {
+    background-color: #e57373; /* Cor de destaque do site */
+    transform: translateY(-3px); /* Efeito de levantar o ícone */
+}
