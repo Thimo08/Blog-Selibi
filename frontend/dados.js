@@ -1,173 +1,170 @@
 const obras = {
-    // OBRAS JÁ EXISTENTES
-    seca: {
-        titulo: "Seca",
-        imagem: "https://m.media-amazon.com/images/I/81B43N7S5SL._AC_UF1000,1000_QL80_.jpg",
-        categoria: "Livro-Imagem",
-        sinopse: "Em uma narrativa visual sem palavras, 'Seca' retrata a jornada de uma família que enfrenta a aridez do sertão. É uma história poderosa sobre resiliência, esperança e a busca por um recomeço.",
-        temas: ["Esperança e Resiliência", "Laços Familiares", "A passagem do tempo"],
-        ilustracao: "André Neves utiliza uma paleta de cores terrosas e quentes para evocar o calor do cenário. As texturas, criadas com colagens, dão uma sensação tátil à leitura."
-    },
-    tom: {
-        titulo: "Tom",
-        imagem: "https://paulinas.vteximg.com.br/arquivos/ids/176008-1000-1000/9788535630654.jpg",
-        categoria: "Fábula Moderna",
-        sinopse: "Tom é um menino que, para defender quem ama, precisa encontrar a coragem dentro de si. Uma história sobre o medo, a bravura e a força que todos temos, mas às vezes não enxergamos.",
-        temas: ["Coragem", "Medo", "Autoconfiança", "Amor"],
-        ilustracao: "As ilustrações alternam entre o escuro, representando o medo, e pontos de luz e cor, que simbolizam a coragem crescente do personagem."
-    },
     jessica: {
         titulo: "A Caixa de Jéssica",
-        imagem: "https://cdn.awsli.com.br/600x450/121/121713/produto/16641883/276e095697.jpg",
+        imagem: "img/a-caixa-de-jessica.png",
         categoria: "Conto Infantil",
-        sinopse: "Jéssica guarda em sua caixa coisas que ninguém entende, mas que para ela fazem todo o sentido. Um livro sobre imaginação, amizade e como o que temos por dentro é o mais importante.",
+        sinopse: "Jéssica é uma menina com um universo particular guardado em uma simples caixa. Para os outros, são apenas objetos sem valor; para ela, são tesouros que dão sentido ao seu mundo. Quando um amigo curioso se aproxima, a história aborda a coragem de compartilhar a própria essência e a singularidade de cada um.",
         temas: ["Imaginação", "Amizade", "Individualidade", "Criatividade"],
-        ilustracao: "A técnica de colagem é usada de forma brilhante, misturando objetos do cotidiano às ilustrações para dar vida ao mundo imaginativo de Jéssica."
+        ilustracao: "A técnica principal é a colagem, que integra objetos do cotidiano, recortes de papel e texturas diversas aos desenhos. Os traços dos personagens são finos e delicados, e a composição visual busca dar uma dimensão tátil e afetiva à narrativa."
     },
-    sebastiao: {
-        titulo: "Sebastião",
-        imagem: "https://a-static.mlcdn.com.br/450x450/livro-sebastiao/magazineluiza/225330300/49d2112e4d07d6a59518a4d46c827361.jpg",
-        categoria: "Poesia Visual",
-        sinopse: "Sebastião é um menino que vive perto do mar e tem uma relação especial com a natureza. A história explora a sensibilidade, a arte e a beleza encontrada nas coisas simples da vida.",
-        temas: ["Natureza", "Arte", "Sensibilidade", "Sonhos"],
-        ilustracao: "Os tons de azul e areia dominam a paleta. Elementos como conchas, areia e tecidos são incorporados diretamente na ilustração, conectando a arte à história."
+    casulos: {
+        titulo: "Casulos",
+        imagem: "img/casulos.jpg",
+        categoria: "Conto sobre Coleções",
+        sinopse: "Casimiro tem uma coleção incomum: ele guarda sentimentos dentro de caixas. A alegria, a saudade, o medo... cada emoção tem seu lugar. O livro é uma jornada sobre a forma como se organiza e se compreende o mundo interior, mostrando que todos são, de certa forma, colecionadores de emoções.",
+        temas: ["Sentimentos", "Imaginação", "Coleções", "Autoconhecimento"],
+        ilustracao: "A ilustração materializa os sentimentos por meio da colagem. O artista cria 'caixas' visuais com texturas, cores e formas que buscam traduzir emoções abstratas em imagens concretas, com um traço que mantém a delicadeza."
     },
-    ninho: {
-        titulo: "Ninho de Cores",
-        imagem: "https://images-na.ssl-images-amazon.com/images/I/51+x-4TCM9L.jpg",
-        categoria: "Livro de Conceitos",
-        sinopse: "De forma poética, este livro explora o nascimento das cores. Cada página é uma descoberta visual que brinca com as misturas e as sensações que cada cor pode trazer.",
-        temas: ["Cores", "Criação", "Descoberta", "Poesia"],
-        ilustracao: "Uma explosão de cores e texturas. André Neves usa a colagem para mostrar como as cores se misturam e 'nascem' umas das outras de forma lúdica."
-    },
-    duelo: {
-        titulo: "O Duelo",
-        imagem: "https://www.travessa.com.br/imagem/a/9788574121516.jpg",
-        categoria: "Conto sobre Diferenças",
-        sinopse: "Um rei e um cavaleiro se preparam para um grande duelo, mas o motivo da disputa é surpreendente. Uma história sobre perspectivas, diferenças e como as coisas nem sempre são o que parecem.",
-        temas: ["Perspectiva", "Diferenças", "Respeito", "Convivência"],
-        ilustracao: "A composição visual é inteligente, muitas vezes mostrando os dois lados da história simultaneamente e usando a simetria para reforçar o tema do duelo."
-    },
-    obax: {
-        titulo: "Obax",
-        imagem: "https://m.media-amazon.com/images/I/91038P6e27L._AC_UF1000,1000_QL80_.jpg",
-        categoria: "Conto Africano",
-        sinopse: "Obax é uma menina que vive na savana africana e tem o dom de inventar histórias fantásticas. Um dia, ela conta ter visto uma chuva de flores, e parte em uma jornada para provar que a magia existe.",
-        temas: ["Imaginação", "Aventura", "Cultura Africana", "Persistência"],
-        ilustracao: "As ilustrações são vibrantes e ricas em texturas, com colagens que utilizam tecidos e padrões que remetem à arte e paisagem africana."
-    },
-    malvina: {
-        titulo: "Malvina",
-        imagem: "https://quindim.com.br/wp-content/uploads/9788536821603-1-scaled.jpg",
-        categoria: "Conto Inventivo",
-        sinopse: "Malvina é uma menina cheia de ideias, que adora criar engenhocas. Ela decide construir uma máquina de 'despreocupação' para sua mãe, mas algo inesperado acontece no meio do processo.",
-        temas: ["Criatividade", "Relação Mãe e Filha", "Invenções", "Solução de Problemas"],
-        ilustracao: "Os desenhos misturam traços delicados com colagens de objetos mecânicos e do cotidiano, criando um universo visual único e divertido para as invenções de Malvina."
+    colecionadorChuvas: {
+        titulo: "O Colecionador de Chuvas",
+        imagem: "img/colecionador-chuvas.jpg",
+        categoria: "Poesia e Natureza",
+        sinopse: "Há quem colecione selos, mas o menino desta história coleciona chuvas. A que molha as plantas, a que acalma, a que traz cheiro de terra. Com grande sensibilidade, ele convida o leitor a perceber a poesia nos detalhes do cotidiano.",
+        temas: ["Natureza", "Sensibilidade", "Percepção", "Poesia"],
+        ilustracao: "A paleta de cores é dominada por tons de azul, cinza e sépia, criando uma atmosfera serena. As texturas aplicadas na colagem dão a impressão de umidade e movimento, como se cada página fosse uma janela em um dia chuvoso."
     },
     sofia: {
         titulo: "A Caligrafia de Dona Sofia",
-        imagem: "https://m.media-amazon.com/images/I/815E76w+QzL._AC_UF1000,1000_QL80_.jpg",
+        imagem: "img/dona-sofia.jpg",
         categoria: "Poesia e Cotidiano",
-        sinopse: "Dona Sofia, uma professora aposentada, espalha poemas pela cidade com sua bela caligrafia. A história celebra o poder da poesia em transformar o dia a dia e conectar pessoas.",
+        sinopse: "Dona Sofia, uma professora aposentada apaixonada por poesia, decide que as palavras não devem ficar presas nos livros. Com sua caligrafia, ela espalha versos pela cidade, transformando a rotina dos moradores. Uma história que celebra o poder da literatura para colorir o mundo.",
         temas: ["Poesia", "Comunidade", "Generosidade", "A beleza das palavras"],
-        ilustracao: "A ilustração é uma ode à caligrafia. Versos e palavras são integrados artisticamente às imagens, transformando o próprio texto em parte da arte visual do livro."
+        ilustracao: "Nesta obra, a própria palavra se torna um elemento visual. O ilustrador integra versos caligráficos às cenas, com traços finos e elegantes que interagem com os personagens. As colagens com papéis texturizados criam um cenário que remete a um grande livro aberto."
     },
-
-    // NOVAS OBRAS
-    orelhasdemariposa: {
-        titulo: "Orelhas de Mariposa",
-        imagem: "https://www.saraiva.com.br/orelhas-de-mariposa/p",
-        categoria: "Autoestima e Aceitação",
-        sinopse: "Mara é uma menina que tem orelhas grandes e sofre com as brincadeiras dos colegas. Com a ajuda da mãe, ela aprende a transformar suas 'diferenças' em algo mágico e poético.",
-        temas: ["Autoestima", "Bullying", "Diferenças", "Imaginação"],
-        ilustracao: "André Neves cria ilustrações delicadas que focam na expressividade dos personagens, usando cores suaves para tratar de um tema sensível com leveza e poesia."
-    },
-    manu_e_mila: {
-        titulo: "Manu e Mila",
-        imagem: "https://m.media-amazon.com/images/I/71u9Q5h-bNL._AC_UF1000,1000_QL80_.jpg",
-        categoria: "Amizade e Perda",
-        sinopse: "Manu e Mila são grandes amigas, mas um dia Mila desaparece. O livro aborda de forma sutil e poética o tema da perda, da saudade e da memória afetiva.",
-        temas: ["Amizade", "Luto", "Saudade", "Memória"],
-        ilustracao: "As ilustrações usam uma paleta de cores restrita e texturas de tecidos para criar uma atmosfera nostálgica e emocionante, refletindo os sentimentos da protagonista."
-    },
-    umbigo: {
-        titulo: "Umbigo",
-        imagem: "https://m.media-amazon.com/images/I/51wB7-7u0lL.jpg",
-        categoria: "Vínculo e Origem",
-        sinopse: "De onde viemos? Para onde vamos? O livro explora a conexão primordial entre mãe e filho através do umbigo, transformando-o em um símbolo poético sobre laços e pertencimento.",
-        temas: ["Nascimento", "Vínculo Materno", "Identidade", "Origem"],
-        ilustracao: "Com colagens e texturas orgânicas, André Neves cria imagens que remetem ao útero e à formação da vida, com um visual onírico e muito sensível."
-    },
-    chapeuzinho_amarelo: {
-        titulo: "Chapeuzinho Amarelo",
-        imagem: "https://m.media-amazon.com/images/I/81NqO5E4w+L._AC_UF1000,1000_QL80_.jpg",
-        categoria: "Clássico Reilustrado",
-        sinopse: "Nesta versão do clássico de Chico Buarque, André Neves dá vida à menina que tinha medo de tudo, especialmente do lobo. Uma jornada sobre a superação dos medos.",
-        temas: ["Medo", "Coragem", "Autoconhecimento", "Crescimento"],
-        ilustracao: "Neves utiliza colagens com tecidos e papéis de diferentes texturas. O lobo é construído de forma fragmentada, representando a desconstrução do próprio medo."
-    },
-    entre_nuvens: {
+    entreNuvens: {
         titulo: "Entre Nuvens",
-        imagem: "https://m.media-amazon.com/images/I/71F2Zt5YjVL._AC_UF1000,1000_QL80_.jpg",
+        imagem: "img/entre-nuvens.jpg",
         categoria: "Sonhos e Imaginação",
-        sinopse: "Um menino sonha que pode tocar as nuvens e trazê-las para perto. O livro é uma viagem lúdica sobre a imaginação infantil e a capacidade de transformar o mundo com os sonhos.",
+        sinopse: "O que aconteceria se pudéssemos tocar as nuvens? O menino desta história não apenas sonha com isso, mas leva o leitor a uma viagem etérea onde o céu e a terra se encontram. Uma narrativa sobre a leveza da infância e a força da imaginação.",
         temas: ["Sonhos", "Imaginação", "Infância", "Leveza"],
-        ilustracao: "Predominam os tons de azul e branco, com texturas que dão às nuvens uma aparência fofa e palpável, quase como algodão."
+        ilustracao: "A leveza é o elemento central da ilustração. Com uma paleta suave, dominada por azuis celestes e brancos, o artista usa texturas de algodão, tecidos e papéis delicados para dar às nuvens uma aparência palpável. Os traços são soltos, transmitindo uma sensação de flutuação."
     },
-    menino_chuva: {
-        titulo: "Menino Chuva na Rua do Sol",
-        imagem: "https://paulinas.vteximg.com.br/arquivos/ids/175949-1000-1000/9788535620245.jpg",
-        categoria: "Conto Poético",
-        sinopse: "Em um lugar onde o sol nunca descansa, um menino feito de chuva aparece, trazendo novas cores e sensações. Uma metáfora sobre a importância da diversidade e do equilíbrio.",
-        temas: ["Diferenças", "Equilíbrio", "Natureza", "Renovação"],
-        ilustracao: "O contraste entre o amarelo vibrante da 'Rua do Sol' e os tons de azul do 'Menino Chuva' é o ponto central da narrativa visual, criando um impacto visual forte."
+    laFora: {
+        titulo: "Lá Fora",
+        imagem: "img/la-fora.png",
+        categoria: "Conto sobre Percepção",
+        sinopse: "O que existe 'lá fora' da janela? Para uma criança, o mundo é um palco de sons, cheiros e movimentos. Com texto de Andréa Taubman, este livro explora o universo de sensações e descobertas que nos cerca a cada momento.",
+        temas: ["Curiosidade", "Natureza", "Som", "Exploração"],
+        ilustracao: "As imagens funcionam como janelas. As colagens são energéticas, usando recortes de revistas e papéis coloridos para traduzir os sons e o movimento do mundo exterior de uma forma sinestésica."
     },
-    vento: {
-        titulo: "Um Pé de Vento",
-        imagem: "https://m.media-amazon.com/images/I/51j1-Bq4wXL.jpg",
-        categoria: "Narrativa Visual",
-        sinopse: "A história de Íris, uma menina com uma conexão profunda com a natureza, que vê uma árvore como sua grande amiga. Uma reflexão sobre amizade e a passagem do tempo.",
-        temas: ["Natureza", "Amizade", "Tempo", "Contemplação"],
-        ilustracao: "André Neves usa colagens com elementos naturais, como folhas e galhos secos, integrando a própria natureza na materialidade do livro."
+    lino: {
+        titulo: "Lino",
+        imagem: "img/lino.jpg",
+        categoria: "Conto sobre Amizade",
+        sinopse: "Lino era um porquinho de pano que morava na prateleira de uma loja, até que a menina Estrela o escolheu. O maior presente que ele recebeu dela, porém, foi a Lua. Uma história sobre o valor da amizade e os presentes simbólicos.",
+        temas: ["Amizade", "Imaginação", "Presentes", "Sonhos"],
+        ilustracao: "A atmosfera é noturna e aconchegante. A técnica de colagem utiliza tecidos macios, como o feltro, para dar a Lino uma aparência tátil. A paleta de azuis profundos e amarelos luminosos cria um contraste visual, com traços que transmitem ternura."
     },
-    a_vez_da_voz: {
-        titulo: "A Vez da Voz",
-        imagem: "https://m.media-amazon.com/images/I/81I7y-7bQ+L._AC_UF1000,1000_QL80_.jpg",
-        categoria: "Poesia",
-        sinopse: "Com poemas de Nicolas Behr, o livro é um convite para ouvir as vozes da natureza, das coisas e dos sentimentos. Cada página é uma surpresa poética e visual.",
-        temas: ["Poesia", "Natureza", "Escuta", "Sensibilidade"],
-        ilustracao: "As ilustrações de André Neves não apenas representam os poemas, mas dialogam com eles, usando texturas e cores para dar forma e sentimento às palavras."
+    malvina: {
+        titulo: "Malvina",
+        imagem: "img/malvina.jpg",
+        categoria: "Conto Inventivo",
+        sinopse: "Malvina tem uma mente que não para, criando engenhocas para resolver os problemas do dia a dia. Sua maior invenção é uma máquina para 'despreocupar' sua mãe. Uma narrativa sobre criatividade e amor familiar.",
+        temas: ["Criatividade", "Relação Mãe e Filha", "Invenções", "Solução de Problemas"],
+        ilustracao: "A ilustração combina os traços finos dos personagens com colagens de objetos mecânicos, como parafusos e peças de relógio. A composição é dinâmica e detalhada, refletindo o processo criativo da protagonista."
     },
-    nem_tudo_e_igual: {
-        titulo: "Nem Tudo na Vida é Igual",
-        imagem: "https://m.media-amazon.com/images/I/51rP0Y6RybL.jpg",
-        categoria: "Diversidade",
-        sinopse: "O livro brinca com as palavras e as imagens para mostrar como as diferenças tornam o mundo mais rico e interessante. Uma celebração da diversidade em suas múltiplas formas.",
-        temas: ["Diversidade", "Diferenças", "Respeito", "Identidade"],
-        ilustracao: "A composição visual é criativa, usando espelhamentos e contrastes para reforçar a ideia de que ser diferente é algo natural e belo."
-    },
-    a_outra_avo: {
-        titulo: "A Outra Avó",
-        imagem: "https://m.media-amazon.com/images/I/51gUv429GSL.jpg",
-        categoria: "Memória Afetiva",
-        sinopse: "Uma menina tem duas avós muito diferentes. O livro explora as memórias, os cheiros, os gostos e as sensações que cada avó desperta, celebrando os laços familiares.",
-        temas: ["Família", "Memória", "Afeto", "Identidade"],
-        ilustracao: "As texturas são o ponto forte, com uso de rendas, tecidos e papéis que remetem a objetos antigos e ao aconchego da casa da avó."
+    manuEMila: {
+        titulo: "Manu e Mila",
+        imagem: "img/manu-mila.jpg",
+        categoria: "Amizade e Perda",
+        sinopse: "Manu e Mila eram inseparáveis, donas de uma amizade tecida com afeto. Um dia, Mila se vai. O livro aborda de forma sutil e poética o tema da perda e da saudade, mostrando como as memórias mantêm quem amamos por perto.",
+        temas: ["Amizade", "Luto", "Saudade", "Memória"],
+        ilustracao: "A emoção é transmitida pela materialidade. Usando colagens de tecidos, linhas e botões, o artista cria uma atmosfera nostálgica e tátil. A paleta de cores é contida, e os traços delicados dos personagens expressam uma sensação de ternura e melancolia."
     },
     margarida: {
         titulo: "Margarida",
-        imagem: "https://www.panapana.com.br/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/m/a/margarida_1_.jpg",
+        imagem: "img/margarida.jpg",
         categoria: "Conto de Fadas Moderno",
-        sinopse: "Uma flor chamada Margarida sonha em conhecer o mundo além do seu jardim. Uma história sobre sonhos, liberdade e a coragem de seguir o próprio caminho.",
+        sinopse: "Presa em um jardim, a flor Margarida sonha com a liberdade de conhecer o mundo. É uma fábula moderna sobre a busca pelos sonhos e a coragem de romper com o que nos prende para florescer em outros lugares.",
         temas: ["Sonhos", "Liberdade", "Coragem", "Jornada"],
-        ilustracao: "As cores são vibrantes e alegres. André Neves usa pétalas e folhas de verdade em suas colagens, misturando o real e o imaginário."
+        ilustracao: "A paleta de cores é vibrante e otimista. O ilustrador integra pétalas e folhas reais em suas colagens, criando uma ponte entre o mundo natural e o imaginário. Os traços são leves e fluidos, buscando representar o movimento."
     },
-    lua_no_umbigo: {
-        titulo: "A Lua no Umbigo",
-        imagem: "https://m.media-amazon.com/images/I/81xV4-2+8ZL._AC_UF1000,1000_QL80_.jpg",
-        categoria: "Poesia e Natureza",
-        sinopse: "Com texto de Alice Ruiz, o livro é uma delicada exploração poética da relação entre o corpo e a natureza, mostrando como estamos todos conectados ao universo.",
-        temas: ["Poesia", "Natureza", "Corpo", "Conexão"],
-        ilustracao: "As ilustrações são etéreas e oníricas, com figuras humanas que se fundem a elementos da natureza, como a lua, as estrelas e a água."
+    mariaPeconha: {
+        titulo: "Maria Peçonha",
+        imagem: "img/maria-peconha.jpg",
+        categoria: "Releitura de Conto de Fadas",
+        sinopse: "Uma releitura de 'Branca de Neve' que apresenta a história sob a perspectiva da madrasta, explorando suas dores, sua solidão e os motivos por trás da sua obsessão pela beleza. A obra questiona os papéis de vilão e mocinha.",
+        temas: ["Contos de Fadas", "Perspectiva", "Inveja", "Alteridade"],
+        ilustracao: "A ilustração é densa e dramática. A paleta de cores escuras, com tons de roxo e preto, e as colagens com texturas ásperas constroem uma atmosfera psicológica. Os traços dos personagens são angulosos e expressivos, refletindo a complexidade de suas emoções."
+    },
+    marocaEDeolindo: {
+        titulo: "Maroca e Deolindo",
+        imagem: "img/maroca-deolindo.jpg",
+        categoria: "Conto sobre o Cotidiano",
+        sinopse: "A história do amor entre Maroca e Deolindo, que vivem em um mundo de rimas e brincadeiras. O livro celebra o afeto que floresce no dia a dia, construído com pequenos gestos de carinho e cumplicidade.",
+        temas: ["Amor", "Cotidiano", "Rimas", "Brincadeira"],
+        ilustracao: "As imagens são alegres e coloridas, com colagens de tecidos estampados (chita) que remetem à cultura popular. Os traços são caricatos e cheios de movimento, transmitindo a energia e o bom humor do casal."
+    },
+    melNaBoca: {
+        titulo: "Mel na Boca",
+        imagem: "img/mel-na-boca.jpg",
+        categoria: "Conto Infantil",
+        sinopse: "A hora da sopa pode ser um desafio, especialmente quando a avó insiste e o neto resiste. Com humor, o livro transforma essa situação em uma exploração sobre as relações de afeto, a negociação e a descoberta de novos sabores.",
+        temas: ["Infância", "Família", "Alimentação", "Descoberta"],
+        ilustracao: "Cores quentes e texturas são usadas para remeter ao ambiente da cozinha. O artista utiliza colagens com elementos que lembram toalhas de mesa e ingredientes. Os traços são divertidos e expressivos, capturando a dinâmica dos personagens."
+    },
+    obax: {
+        titulo: "Obax",
+        imagem: "img/obax.jpg",
+        categoria: "Conto Africano",
+        sinopse: "Na savana africana vive Obax, uma menina com uma imaginação muito fértil. Ela conta histórias fantásticas que os mais velhos duvidam, até que um dia decide provar que sua maior invenção — uma chuva de flores — é real.",
+        temas: ["Imaginação", "Aventura", "Cultura Africana", "Persistência"],
+        ilustracao: "A arte busca uma imersão na cultura africana. As colagens são ricas em tecidos com estampas étnicas e texturas que lembram a terra, com uma paleta de cores quentes e vibrantes. Os traços capturam a energia e a expressividade da protagonista."
+    },
+    obrigado: {
+        titulo: "Obrigado",
+        imagem: "img/obrigado.jpg",
+        categoria: "Livro sobre Gratidão",
+        sinopse: "Este livro percorre diversas situações e personagens, mostrando que a gratidão é um sentimento que conecta a todos. Uma obra que lembra como um simples 'obrigado' pode fortalecer os laços entre as pessoas.",
+        temas: ["Gratidão", "Generosidade", "Conexão", "Sentimentos"],
+        ilustracao: "A ilustração busca transmitir afeto. Com traços suaves e colagens delicadas, usando papéis de carta e tecidos leves, as cenas são construídas com ternura. A paleta de cores é suave, reforçando a sensação de gentileza."
+    },
+    peDeVento: {
+        titulo: "Um Pé de Vento",
+        imagem: "img/pe-de-vento.jpg",
+        categoria: "Narrativa Visual",
+        sinopse: "Para a menina Íris, uma árvore no quintal é sua melhor amiga, com quem compartilha segredos. Esta é uma história sobre a conexão com a natureza, a amizade silenciosa e a forma como o tempo passa.",
+        temas: ["Natureza", "Amizade", "Tempo", "Contemplação"],
+        ilustracao: "A natureza é integrada à obra. O ilustrador utiliza elementos orgânicos, como folhas secas e galhos, diretamente em suas colagens. Essa técnica cria uma conexão tátil e visual entre a arte e a história, com traços que evocam o movimento do vento."
+    },
+    sebastianaESeverina: {
+        titulo: "Sebastiana e Severina",
+        imagem: "img/sebastiana-severia.jpg",
+        categoria: "Cultura Popular",
+        sinopse: "Sebastiana do bordado e Severina da xilogravura representam duas faces da cultura do sertão nordestino. Através de suas artes, elas contam histórias, expressam sua força e revelam a beleza da simplicidade. Uma homenagem à mulher sertaneja.",
+        temas: ["Cultura Nordestina", "Força Feminina", "Sertão", "Sabedoria Popular"],
+        ilustracao: "A composição visual celebra o artesanato brasileiro. As colagens são repletas de tecidos de chita, rendas e texturas que imitam a xilogravura. Os traços são marcados e fortes, refletindo a identidade cultural das personagens."
+    },
+    seca: {
+        titulo: "Seca",
+        imagem: "img/seca.jpg",
+        categoria: "Livro-Imagem",
+        sinopse: "Sem palavras, este livro narra a jornada de uma família de retirantes que atravessa o sertão. É uma obra visual sobre resiliência, laços familiares e a esperança que persiste mesmo no cenário mais árido.",
+        temas: ["Esperança", "Resiliência", "Laços Familiares", "Sertão"],
+        ilustracao: "A paleta de cores terrosas — ocres, marrons e amarelos — busca transportar o leitor para o calor do sertão. A técnica de colagem utiliza papel lixado e materiais ásperos, que dão uma sensação tátil à aridez da paisagem."
+    },
+    tom: {
+        titulo: "Tom",
+        imagem: "img/tom.jpg",
+        categoria: "Fábula Moderna",
+        sinopse: "O irmão de Tom o observa, tentando decifrar seus mistérios. A história leva a uma jornada sobre o medo, a introspecção e a coragem necessária para compartilhar o mundo interior e proteger quem se ama.",
+        temas: ["Coragem", "Medo", "Autoconfiança", "Amor"],
+        ilustracao: "A dualidade da história é refletida na arte. O livro intercala páginas escuras, que representam o medo, com pontos de cores e luz, que simbolizam a coragem. Os traços são expressivos e buscam transmitir a carga emocional do personagem."
+    },
+    tomboloDoLombo: {
+        titulo: "Tombolo do Lombo",
+        imagem: "img/tombolo-lombo.jpg",
+        categoria: "Conto Ritmado",
+        sinopse: "Uma história cumulativa, cheia de ritmo e repetição, que brinca com os sons e as palavras, convidando o leitor a entrar na dança. A cada página, um novo personagem se junta à história.",
+        temas: ["Ritmo", "Brincadeira", "Música", "Animais"],
+        ilustracao: "A ilustração é muito dinâmica. Com uma paleta de cores vibrante e colagens enérgicas, os personagens parecem se movimentar nas páginas. Os traços são soltos e caricatos, transmitindo a alegria da narrativa."
+    },
+    vivaEuVivaTu: {
+        titulo: "Viva eu, Viva tu, Viva o Rabo do Tatu",
+        imagem: "img/viva-eu-viva-tu.jpg",
+        categoria: "Folclore Brasileiro",
+        sinopse: "Baseado em um trava-língua popular, este livro é uma celebração da cultura e da fauna brasileira, com muito humor e brincadeira. A cada virada de página, a história visual se desenrola.",
+        temas: ["Folclore", "Cultura Brasileira", "Animais", "Humor"],
+        ilustracao: "A técnica de colagem dá uma vida tátil aos animais do folclore. As texturas de tecidos e papéis estampados, combinadas com uma paleta de cores tropicais, criam um universo visual que remete à cultura brasileira."
     }
 };
